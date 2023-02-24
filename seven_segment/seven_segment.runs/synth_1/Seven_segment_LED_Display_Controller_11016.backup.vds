@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Wed Feb 22 16:54:02 2023
+# Process ID: 11016
+# Current directory: D:/test/seven_segment/seven_segment.runs/synth_1
+# Command line: vivado.exe -log Seven_segment_LED_Display_Controller.vds -mode batch -messageDb vivado.pb -notrace -source Seven_segment_LED_Display_Controller.tcl
+# Log file: D:/test/seven_segment/seven_segment.runs/synth_1/Seven_segment_LED_Display_Controller.vds
+# Journal file: D:/test/seven_segment/seven_segment.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Seven_segment_LED_Display_Controller.tcl -notrace
+Command: synth_design -top Seven_segment_LED_Display_Controller -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10312 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 303.641 ; gain = 96.637
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Seven_segment_LED_Display_Controller' [D:/test/seven_segment/seven_segment.srcs/sources_1/new/seven_segment.v:1]
+WARNING: [Synth 8-151] case item 2'b10 is unreachable [D:/test/seven_segment/seven_segment.srcs/sources_1/new/seven_segment.v:61]
+WARNING: [Synth 8-151] case item 2'b11 is unreachable [D:/test/seven_segment/seven_segment.srcs/sources_1/new/seven_segment.v:67]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/test/seven_segment/seven_segment.srcs/sources_1/new/seven_segment.v:48]
+WARNING: [Synth 8-151] case item 4'b0100 is unreachable [D:/test/seven_segment/seven_segment.srcs/sources_1/new/seven_segment.v:83]
+WARNING: [Synth 8-151] case item 4'b0101 is unreachable [D:/test/seven_segment/seven_segment.srcs/sources_1/new/seven_segment.v:84]
+WARNING: [Synth 8-151] case item 4'b0110 is unreachable [D:/test/seven_segment/seven_segment.srcs/sources_1/new/seven_segment.v:85]
+WARNING: [Synth 8-151] case item 4'b0111 is unreachable [D:/test/seven_segment/seven_segment.srcs/sources_1/new/seven_segment.v:86]
+WARNING: [Synth 8-151] case item 4'b1000 is unreachable [D:/test/seven_segment/seven_segment.srcs/sources_1/new/seven_segment.v:87]
+WARNING: [Synth 8-151] case item 4'b1001 is unreachable [D:/test/seven_segment/seven_segment.srcs/sources_1/new/seven_segment.v:88]
+INFO: [Synth 8-226] default block is never used [D:/test/seven_segment/seven_segment.srcs/sources_1/new/seven_segment.v:78]
+WARNING: [Synth 8-3848] Net Anode_Activate in module/entity Seven_segment_LED_Display_Controller does not have driver. [D:/test/seven_segment/seven_segment.srcs/sources_1/new/seven_segment.v:4]
+WARNING: [Synth 8-3848] Net LED_BCD in module/entity Seven_segment_LED_Display_Controller does not have driver. [D:/test/seven_segment/seven_segment.srcs/sources_1/new/seven_segment.v:10]
+INFO: [Synth 8-256] done synthesizing module 'Seven_segment_LED_Display_Controller' (1#1) [D:/test/seven_segment/seven_segment.srcs/sources_1/new/seven_segment.v:1]
+WARNING: [Synth 8-3331] design Seven_segment_LED_Display_Controller has unconnected port Anode_Activate[1]
+WARNING: [Synth 8-3331] design Seven_segment_LED_Display_Controller has unconnected port Anode_Activate[0]
+WARNING: [Synth 8-3331] design Seven_segment_LED_Display_Controller has unconnected port clock_100Mhz
+WARNING: [Synth 8-3331] design Seven_segment_LED_Display_Controller has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 340.938 ; gain = 133.934
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 340.938 ; gain = 133.934
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
